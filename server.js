@@ -29,9 +29,3 @@ const PORT = 3000;
 app.listen(PORT, () => {
     console.log(`Node.js API running on http://127.0.0.1:${PORT}`);
 });
-
-// python rag_pipeline.py
-// node server.js
-// POST request to: http://127.0.0.1:3000/query
-// Body (JSON)
-// { "query": "Explain what is LangSmith" }
