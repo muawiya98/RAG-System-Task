@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  rag_pipeline:
+    build: .
+    ports:
+      - "5000:5000"
+    working_dir: /app
+    volumes:
+      - .:/app
+    environment:
+      - OPENAI_API_KEY="--NEEDED"
+
+  server:
+    build: .
+    ports:
+      - "3000:3000"
+    working_dir: /app
+    volumes:
+      - .:/app
