@@ -17,7 +17,6 @@ app.post("/query", async (req, res) => {
         }
 
         const response = await axios.post(FLASK_API_URL, { query });
-
         res.json(response.data);
     } catch (error) {
         console.error("Error:", error.message);
